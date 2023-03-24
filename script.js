@@ -8,9 +8,9 @@ setTimeout( () =>{
     }, 1000);
 
 document.onkeydown = function(e){
-    console.log("key Code is :", e.keycode)
+    console.log("key Code is :", e.keyCode)
 
-    if(e.keycode == 38){
+    if(e.keyCode == 38){
         dino = document.querySelector('.dino');
         dino.classList.add('animateDino');
         setTimeout(()=> {
@@ -18,14 +18,14 @@ document.onkeydown = function(e){
         }, 700)
     }
 
-    if(e.keycode == 39){
+    if(e.keyCode == 39){
         dino = document.querySelector('.dino');
         dinoX= parseInt(window.getComputedStyle(dino , null).getPropertyValue('left'));
         dino.style.left= dinoX + 112 + "px";
 
 
         }
-    if(e.keycode == 37){
+    if(e.keyCode == 37){
         dino = document.querySelector('.dino');
         dinoX= parseInt(window.getComputedStyle(dino , null).getPropertyValue('left'));
         dino.style.left= (dinoX - 112) + "px";
